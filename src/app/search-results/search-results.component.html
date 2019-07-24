@@ -1,0 +1,7 @@
+<div class="col-12 col-md-9 float-left px-2 pt-3 pt-md-0 codesearch-results">
+<app-results-counter *ngIf="items!=undefined" [resultsCounter]='items.length'></app-results-counter>
+
+<div class="border-top border-bottom d-flex justify-content-between align-items-center" *ngFor="let item of items">
+    <app-search-result [myItem]='item'  [actionValue]='defaultaction' ></app-search-result>
+  </div>
+</div>

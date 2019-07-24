@@ -1,0 +1,5 @@
+<p class="m-3">
+    <input type="text" value="{{keyWordValue}}"  placeholder="type search keyword" (keyup.enter)="GetRepository(keyWord.value)"  class="search-input" #keyWord>
+    <input type="button" value="search" class="btn btn-secondary"  (click)="GetRepository(keyWord.value)">
+    <input type="button" value="my stars" class="btn btn-secondary"  (click)="navigateToStars()">
+</p>

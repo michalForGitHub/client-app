@@ -1,0 +1,17 @@
+<div class="col-12 row">
+    <img  class="imgSize  rounded float-left m-3  d-block" src="{{myItem.IconUrl}}"/>
+    <div class="textColumn p-3">
+<h5 >
+    <a href="{{myItem.Url}}">  {{myItem.FullName}}</a>
+</h5>
+<p > {{myItem.Description}}</p></div>
+<div  class="flex-shrink-0  col-md-4 pt-2 pr-md-3 d-flex m-3 ">
+   
+    <button  class='btn btn-sm btn-with-count js-toggler-target'  (click)="bookmarkResult($event, myItem)">{{actionValue}}<svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true">
+      <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
+    </svg></button> </div>
+  
+</div>
+
+
+
